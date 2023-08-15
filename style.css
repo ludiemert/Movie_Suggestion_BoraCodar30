@@ -167,3 +167,42 @@ header button {
   width: 194px;
   align-items: center;
 }
+
+@media (max-width: 500px) {
+  body {
+    background: #1e1f28;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    border-radius: 0;
+  }
+
+  .container {
+    padding: 4rem 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .movies {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .movies::after {
+    content: "";
+    background: linear-gradient(120deg, #c497ff 30%, #9947ff 30%);
+    height: 1rem;
+    width: 100%;
+  }
+}
